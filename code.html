@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        .accordion { width: 300px; }
+        .accordion input { display: none; }
+        .accordion label { display: block; padding: 10px; background: lightgray; cursor: pointer; }
+        .accordion .content { display: none; padding: 10px; background: white; }
+        .accordion input:checked + label + .content { display: block; }
+    </style>
+</head>
+<body>
+    <div class="accordion">
+        <input type="checkbox" id="q1">
+        <label for="q1">What is HTML?</label>
+        <div class="content">HTML is a markup language.</div>
+        
+        <input type="checkbox" id="q2">
+        <label for="q2">What is CSS?</label>
+        <div class="content">CSS is used for styling.</div>
+    </div>
+</body>
+</html>
